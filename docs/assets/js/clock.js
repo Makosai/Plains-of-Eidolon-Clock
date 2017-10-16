@@ -10,15 +10,16 @@ setInterval(function() { updateTime() }, 1000);
 function updateTime() {
     // Variables
     var date = new Date();
-    var now = Math.round(date.getTime() / 1000);
+    var now = Math.floor(date.getTime() / 1000);
+    
     var midnight = 1508104500;
 
     // Calculations
     now -= midnight;
     now %= 9000;
-    var hour = Math.round(now / 375);
+    var hour = Math.floor(now / 375);
     now %= 375;
-    var min = Math.round(now / 6.25);
+    var min = Math.floor(now / 6.25);
     now %= 6.25;
     var zero = (min < 10) ? "0" : "";
 
@@ -28,9 +29,11 @@ function updateTime() {
         ampm = "";
     } else if(hour > 12) {
         ampm = "pm";
+        $('#daynight').attr('class', 'fa fa-moon-o moon');
         hour -= 12;
     } else {
         ampm = "am";
+        $('#daynight').attr('class', 'fa fa-sun-o sun');
     }
     
     $('#timer').html(`${(hour).pad()}:${(min).pad()} ${ampm}`);

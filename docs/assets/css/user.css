@@ -155,3 +155,21 @@ section.testimonials {
   }
 }
 
+#timer {
+  display:inline-block;
+  margin-right:15px;
+}
+
+#daynight {
+  text-shadow:0px 0px 5px #FFFFFF;
+  font-size:50px;
+}
+
+#daynight.moon {
+  color:#51b5e0;
+}
+
+#daynight.sun {
+  color:#f9d616;
+}
+
