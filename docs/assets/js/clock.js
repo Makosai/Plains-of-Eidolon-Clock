@@ -4,7 +4,8 @@ Number.prototype.pad = function(size) {
     return s;
 }
 
-setTimeout(updateTime(), 1000);
+updateTime();
+setInterval(function() { updateTime() }, 1000);
 
 function updateTime() {
     // Variables
