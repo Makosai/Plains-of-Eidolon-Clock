@@ -33,7 +33,7 @@
   }
 }
 
-.hero .get-it h1, .hero .get-it p {
+.hero .get-it h1, .hero .get-it h2, .hero .get-it p {
   color:#fff;
   text-shadow:2px 2px 3px rgba(0,0,0,0.3);
   margin-bottom:40px;
