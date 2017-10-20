@@ -31,9 +31,11 @@ function updateTime() {
         ampm = "pm";
         $('#daynight').attr('class', 'fa fa-moon-o moon');
         hour -= 12;
+		$('body').css('background-image', 'url(assets/img/night.jpg)');
     } else {
         ampm = "am";
         $('#daynight').attr('class', 'fa fa-sun-o sun');
+		$('body').css('background-image', 'url(assets/img/day.jpg)');
     }
     
     $('#timer').html(`${(hour).pad()}:${(min).pad()} ${ampm}`);

@@ -8,9 +8,10 @@
 }
 
 .hero {
-  background:url(../../assets/img/city_bg.jpg) no-repeat center;
+  background:url(../../assets/img/day.jpg) no-repeat center;
   background-size:cover;
   border:none;
+  transition: background 0.3s;
 }
 
 @media (min-width:992px) {
