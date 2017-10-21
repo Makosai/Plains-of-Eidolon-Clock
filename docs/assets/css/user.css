@@ -136,12 +136,13 @@ section.testimonials {
   font-size:20px;
 }
 
-.site-footer .social-icons a:hover {
+.social-icons:hover {
   opacity:1;
 }
 
 .container {
 	margin-left: 0;
+	margin-right: 0;
 }
 
 .navbar {
@@ -150,24 +151,33 @@ section.testimonials {
 	opacity: 0.5;
 }
 
-.site-footer .social-icons a {
+.social-icons {
   display:inline-block;
   width:32px;
   border:none;
   font-size:20px;
   border-radius:50%;
   margin:4px;
+  margin-top: 10px;
   color:#fff;
   text-align:center;
   background-color:#798FA5;
   height:32px;
   opacity:0.8;
   line-height:32px;
+  float: right;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   .site-footer .social-icons {
     text-align:right;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+	width: 100%;
+	margin: 0;
   }
 }
 
