@@ -8,15 +8,21 @@
 }
 
 .hero {
-  background:url(../../assets/img/city_bg.jpg) no-repeat center;
+  border: none;
+  background: transparent;
+  margin-bottom: 0px !important;
+}
+
+body {
+  background:url(../../assets/img/day.jpg) no-repeat center center fixed;
   background-size:cover;
-  border:none;
+  transition: background 0.3s;
 }
 
 @media (min-width:992px) {
   .hero .get-it {
-    text-align:right;
-    margin-top:80px;
+    text-align:left;
+    margin-top:30px;
     padding-right:30px;
   }
 }
@@ -36,7 +42,7 @@
 .hero .get-it h1, .hero .get-it h2, .hero .get-it p {
   color:#fff;
   text-shadow:2px 2px 3px rgba(0,0,0,0.3);
-  margin-bottom:40px;
+  margin-bottom:20px;
 }
 
 .hero .get-it .btn {
@@ -130,28 +136,48 @@ section.testimonials {
   font-size:20px;
 }
 
-.site-footer .social-icons a:hover {
+.social-icons:hover {
   opacity:1;
 }
 
-.site-footer .social-icons a {
+.container {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.navbar {
+	border-radius: 0;
+	background-color: black;
+	opacity: 0.5;
+}
+
+.social-icons {
   display:inline-block;
   width:32px;
   border:none;
   font-size:20px;
   border-radius:50%;
   margin:4px;
+  margin-top: 10px;
   color:#fff;
   text-align:center;
   background-color:#798FA5;
   height:32px;
   opacity:0.8;
   line-height:32px;
+  float: right;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   .site-footer .social-icons {
     text-align:right;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+	width: 100%;
+	margin: 0;
   }
 }
 
